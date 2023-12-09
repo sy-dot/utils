@@ -1,0 +1,149 @@
+#!/bin/bash
+
+
+# // COPY HERE // BASH STYLING
+# TEXT COLORS
+FGDEF="\e[39m" # Default foreground color
+BLACK="\e[30m"
+WHITE="\e[97m"
+
+RED="\e[31m"
+GREEN="\e[32m"
+YELLOW="\e[33m"
+BLUE="\e[34m"
+MGNT="\e[35m"
+CYAN="\e[36m"
+L_GRAY="\e[37m"
+D_GRAY="\e[90m"
+L_RED="\e[91m"
+L_GREEN="\e[92m"
+L_YELLOW="\e[93m"
+L_BLUE="\e[94m"
+L_MGNT="\e[95m"
+L_CYAN="\e[96m"
+
+# BOLD; FADE; ITALIC; UNDERLINE;
+# BOLD
+B_FGDEF="\e[1;39m" # Default foreground color
+B_BLACK="\e[1;30m"
+B_WHITE="\e[1;97m"
+
+B_RED="\e[1;31m"
+B_GREEN="\e[1;32m"
+B_YELLOW="\e[1;33m"
+B_BLUE="\e[1;34m"
+B_MGNT="\e[1;35m"
+B_CYAN="\e[1;36m"
+BL_GRAY="\e[1;37m"
+BD_GRAY="\e[1;90m"
+BL_RED="\e[1;91m"
+BL_GREEN="\e[1;92m"
+BL_YELLOW="\e[1;93m"
+BL_BLUE="\e[1;94m"
+BL_MGNT="\e[1;95m"
+BL_CYAN="\e[1;96m"
+
+# FADE
+F_FGDEF="\e[2;39m" # Default foreground color
+F_BLACK="\e[2;30m"
+F_WHITE="\e[2;97m"
+
+F_RED="\e[2;31m"
+F_GREEN="\e[2;32m"
+F_YELLOW="\e[2;33m"
+F_BLUE="\e[2;34m"
+F_MGNT="\e[2;35m"
+F_CYAN="\e[2;36m"
+FL_GRAY="\e[2;37m"
+FD_GRAY="\e[2;90m"
+FL_RED="\e[2;91m"
+FL_GREEN="\e[2;92m"
+FL_YELLOW="\e[2;93m"
+FL_BLUE="\e[2;94m"
+FL_MGNT="\e[2;95m"
+FL_CYAN="\e[2;96m"
+
+# ITALIC
+I_FGDEF="\e[3;39m" # Default foreground color
+I_BLACK="\e[3;30m"
+I_WHITE="\e[3;97m"
+
+I_RED="\e[3;31m"
+I_GREEN="\e[3;32m"
+I_YELLOW="\e[3;33m"
+I_BLUE="\e[3;34m"
+I_MGNT="\e[3;35m"
+I_CYAN="\e[3;36m"
+IL_GRAY="\e[3;37m"
+ID_GRAY="\e[3;90m"
+IL_RED="\e[3;91m"
+IL_GREEN="\e[3;92m"
+IL_YELLOW="\e[3;93m"
+IL_BLUE="\e[3;94m"
+IL_MGNT="\e[3;95m"
+IL_CYAN="\e[3;96m"
+
+# UNDERLINE
+U_FGDEF="\e[4;39m" # Default foreground color
+U_BLACK="\e[4;30m"
+U_WHITE="\e[4;97m"
+
+U_RED="\e[4;31m"
+U_GREEN="\e[4;32m"
+U_YELLOW="\e[4;33m"
+U_BLUE="\e[4;34m"
+U_MGNT="\e[4;35m"
+U_CYAN="\e[4;36m"
+UL_GRAY="\e[4;37m"
+UD_GRAY="\e[4;90m"
+UL_RED="\e[4;91m"
+UL_GREEN="\e[4;92m"
+UL_YELLOW="\e[4;93m"
+UL_BLUE="\e[4;94m"
+UL_MGNT="\e[4;95m"
+UL_CYAN="\e[4;96m"
+
+ENDCOLOR="\e[0m" # 0=Default; 1=Bold; 2=Fade; 3=Italic; 4=Underline;
+# // COPY HERE // BASH STYLING
+
+
+echo -e "\n # TEXT COLORS\n"
+echo -e "${L_GRAY}L_GRAY${ENDCOLOR}  | ${D_GRAY}D_GRAY${ENDCOLOR}"
+echo -e "${FGDEF}FGDEF${ENDCOLOR}   | ${BLACK}BLACK${ENDCOLOR}    | ${WHITE}WHITE${ENDCOLOR}"
+echo -e "${RED}RED${ENDCOLOR}     | ${GREEN}GREEN${ENDCOLOR}    | ${YELLOW}YELLOW${ENDCOLOR}"
+echo -e "${BLUE}BLUE${ENDCOLOR}    | ${MGNT}MGNT${ENDCOLOR}     | ${CYAN}CYAN${ENDCOLOR}"
+echo -e "${L_RED}L_RED${ENDCOLOR}   | ${L_GREEN}L_GREEN${ENDCOLOR}  | ${L_YELLOW}L_YELLOW${ENDCOLOR}"
+echo -e "${L_BLUE}L_BLUE${ENDCOLOR}  | ${L_MGNT}L_MGNT${ENDCOLOR}   | ${L_CYAN}L_CYAN${ENDCOLOR}"
+echo
+echo -e "\n # TEXT STYLES: BOLD\n"
+echo -e "${BL_GRAY}BL_GRAY${ENDCOLOR}  | ${BD_GRAY}BD_GRAY${ENDCOLOR}"
+echo -e "${B_FGDEF}B_FGDEF${ENDCOLOR}  | ${B_BLACK}B_BLACK${ENDCOLOR}    | ${B_WHITE}B_WHITE${ENDCOLOR}"
+echo -e "${B_RED}B_RED${ENDCOLOR}    | ${B_GREEN}B_GREEN${ENDCOLOR}    | ${B_YELLOW}B_YELLOW${ENDCOLOR}"
+echo -e "${B_BLUE}B_BLUE${ENDCOLOR}   | ${B_MGNT}B_MGNT${ENDCOLOR}     | ${B_CYAN}B_CYAN${ENDCOLOR}"
+echo -e "${BL_RED}BL_RED${ENDCOLOR}  | ${BL_GREEN}BL_GREEN${ENDCOLOR}  | ${BL_YELLOW}BL_YELLOW${ENDCOLOR}"
+echo -e "${BL_BLUE}BL_BLUE${ENDCOLOR} | ${BL_MGNT}BL_MGNT${ENDCOLOR}   | ${BL_CYAN}BL_CYAN${ENDCOLOR}"
+echo
+echo -e "\n # TEXT STYLES: FADE\n"
+echo -e "${FL_GRAY}FL_GRAY${ENDCOLOR}  | ${FD_GRAY}FD_GRAY${ENDCOLOR}"
+echo -e "${F_FGDEF}F_FGDEF${ENDCOLOR}  | ${F_BLACK}F_BLACK${ENDCOLOR}    | ${F_WHITE}F_WHITE${ENDCOLOR}"
+echo -e "${F_RED}F_RED${ENDCOLOR}    | ${F_GREEN}F_GREEN${ENDCOLOR}    | ${F_YELLOW}F_YELLOW${ENDCOLOR}"
+echo -e "${F_BLUE}F_BLUE${ENDCOLOR}   | ${F_MGNT}F_MGNT${ENDCOLOR}     | ${F_CYAN}F_CYAN${ENDCOLOR}"
+echo -e "${FL_RED}FL_RED${ENDCOLOR}  | ${FL_GREEN}FL_GREEN${ENDCOLOR}  | ${FL_YELLOW}FL_YELLOW${ENDCOLOR}"
+echo -e "${FL_BLUE}FL_BLUE${ENDCOLOR} | ${FL_MGNT}FL_MGNT${ENDCOLOR}   | ${FL_CYAN}FL_CYAN${ENDCOLOR}"
+echo
+echo -e "\n # TEXT STYLES: ITALIC\n"
+echo -e "${IL_GRAY}IL_GRAY${ENDCOLOR}  | ${ID_GRAY}ID_GRAY${ENDCOLOR}"
+echo -e "${I_FGDEF}I_FGDEF${ENDCOLOR}  | ${I_BLACK}I_BLACK${ENDCOLOR}    | ${I_WHITE}I_WHITE${ENDCOLOR}"
+echo -e "${I_RED}I_RED${ENDCOLOR}    | ${I_GREEN}I_GREEN${ENDCOLOR}    | ${I_YELLOW}I_YELLOW${ENDCOLOR}"
+echo -e "${I_BLUE}I_BLUE${ENDCOLOR}   | ${I_MGNT}I_MGNT${ENDCOLOR}     | ${I_CYAN}I_CYAN${ENDCOLOR}"
+echo -e "${IL_RED}IL_RED${ENDCOLOR}  | ${IL_GREEN}IL_GREEN${ENDCOLOR}  | ${IL_YELLOW}IL_YELLOW${ENDCOLOR}"
+echo -e "${IL_BLUE}IL_BLUE${ENDCOLOR} | ${IL_MGNT}IL_MGNT${ENDCOLOR}   | ${IL_CYAN}IL_CYAN${ENDCOLOR}"
+echo
+echo -e "\n # TEXT STYLES: UNDERLINE\n"
+echo -e "${UL_GRAY}UL_GRAY${ENDCOLOR}  | ${UD_GRAY}UD_GRAY${ENDCOLOR}"
+echo -e "${U_FGDEF}U_FGDEF${ENDCOLOR}  | ${U_BLACK}U_BLACK${ENDCOLOR}    | ${U_WHITE}U_WHITE${ENDCOLOR}"
+echo -e "${U_RED}U_RED${ENDCOLOR}    | ${U_GREEN}U_GREEN${ENDCOLOR}    | ${U_YELLOW}U_YELLOW${ENDCOLOR}"
+echo -e "${U_BLUE}U_BLUE${ENDCOLOR}   | ${U_MGNT}U_MGNT${ENDCOLOR}     | ${U_CYAN}U_CYAN${ENDCOLOR}"
+echo -e "${UL_RED}UL_RED${ENDCOLOR}  | ${UL_GREEN}UL_GREEN${ENDCOLOR}  | ${UL_YELLOW}UL_YELLOW${ENDCOLOR}"
+echo -e "${UL_BLUE}UL_BLUE${ENDCOLOR} | ${UL_MGNT}UL_MGNT${ENDCOLOR}   | ${UL_CYAN}UL_CYAN${ENDCOLOR}"
+echo
